@@ -2,6 +2,8 @@
 
 This project is a sample of client-server authentication using MetaMask.
 
+Demo here: https://connerhenning.github.io/Web3-MetaMask-Authentication/
+
 #### Used Dependencies
 - https://github.com/wmh/php-ecrecover/
 - https://github.com/tuaris/CryptoCurrencyPHP/tree/209d0c20789549dcb27a71de4f00ccc10ef806bb
