@@ -10,7 +10,7 @@ Thanks wmh and tuaris.
 
 #### Requirements
  -PHP-GMP & PHP 7.2
-
+ -Composer
 #### Deployment
   Simply drop files into a web directory and run "composer install" via command line.
 
