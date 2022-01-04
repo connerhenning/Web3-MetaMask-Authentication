@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="content/stylesheet.css" rel="stylesheet">
+		<script src="eth-functions.js"></script>	
+	</head>
+	
+	<html>
+		<div id="mm-login-div">
+			<script>
+				var _loginDiv = document.getElementById("mm-login-div");
+				var _currentWallet = null;
+				if (window.ethereum) {
+					isMetaMaskLoggedIn()
+						.then((response) => {
+							if (response) {
+								getCurrentWallet()
+									.then((wallet) => {
+										_currentWallet = wallet;
+										_loginDiv.innerHTML = '<h5 class="display-5">Welcome back<br> '+ _currentWallet; + '</h5>';
+									})
+							} else {
+								_loginDiv.innerHTML = _loginDiv.innerHTML + '<h5 class="display-5">Welcome back! Please Login</h5><button class="mm-login-btn btn-primary" id="mm-btn" onclick="loginWithMetaMask()"><img class="mm-icon" src="content/metamask.webp"/><span class="mm-text">Login with MetaMask</span></button>';
+							}
+						})
+				} else {
+
+				}
+			</script>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+	</html>
+</html>
