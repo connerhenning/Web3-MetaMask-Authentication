@@ -9,8 +9,8 @@ This project is a sample of client-server authentication using MetaMask.
 Thanks wmh and tuaris.
 
 #### Requirements
--PHP-GMP & PHP 7.2
--Composer
+- PHP-GMP & PHP 7.2
+- Composer
 #### Deployment
   Simply drop files into a web directory and run "composer install" via command line.
 
